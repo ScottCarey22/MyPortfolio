@@ -1,5 +1,5 @@
 databases:
-  - name: MyPortfolio
+  - name: MyPortfolioDatabase
     plan: free
     databaseName: MyPortfolioDB
     user: mysite
