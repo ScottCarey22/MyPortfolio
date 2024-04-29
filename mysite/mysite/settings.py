@@ -27,7 +27,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', default = "Your secret KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = 'RENDER' not in os.environ
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://myportfolio-mxbu.onrender.com']
 
 RENDER_EXTERNAL_HOST = os.environ.get('RENDER_EXTERNAL_HOST') or 'localhost:8000'
 
