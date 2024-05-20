@@ -29,7 +29,9 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['myportfolio-mxbu.onrender.com']
 
-RENDER_EXTERNAL_HOST = os.environ.get('RENDER_EXTERNAL_HOST') or 'localhost:8000'
+RENDER_EXTERNAL_HOSTNAME = os.environ.get('RENDER_EXTERNAL_HOST')
+if RENDER_EXTERNAL_HOSTNAME:
+    ALLOWED_HOSTS.append(RENDER_EXTERNAL_HOSTNAME)
 
 
 
@@ -141,7 +143,7 @@ LOGGING = {
 
 STATIC_URL = 'static/'
 
-if Render: 
+if Render in os.environ:
     STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
     STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
