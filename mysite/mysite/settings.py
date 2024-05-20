@@ -82,7 +82,7 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 
 DATABASES = {
     'default': dj_database_url.config(
-        default='postgres://myportfolio_opxd_user:lbLIo8Dqqnly4PeQeinzWVWbuQDDPVKd@dpg-coj7rkqcn0vc73dq9n40-a/myportfolio_opxd',
+        default='postgres://myportfolio_opxd_user:lbLIo8Dqqnly4PeQeinzWVWbuQDDPVKd@dpg-coj7rkqcn0vc73dq9n40-a.ohio-postgres.render.com/myportfolio_opxd',
     conn_max_age=600)
 }
 
