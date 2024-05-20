@@ -25,7 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get('SECRET_KEY', default = "da99d16341f347cce5df059e830808f9")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['myportfolio-mxbu.onrender.com']
 
@@ -141,7 +141,7 @@ LOGGING = {
 
 STATIC_URL = 'static/'
 
-if not DEBUG: 
+if Render: 
     STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
     STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
