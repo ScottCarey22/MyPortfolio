@@ -143,7 +143,7 @@ LOGGING = {
 
 STATIC_URL = 'static/'
 
-if 'Render' in os.environ:
+if 'RENDER' in os.environ:
     STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
     STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
