@@ -27,7 +27,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', default = "da99d16341f347cce5df059e830
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['myportfolio-mxbu.onrender.com']
+ALLOWED_HOSTS = []
 
 RENDER_EXTERNAL_HOSTNAME = os.environ.get('RENDER_EXTERNAL_HOST')
 if RENDER_EXTERNAL_HOSTNAME:
